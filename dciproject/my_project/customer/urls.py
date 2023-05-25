@@ -2,6 +2,7 @@
 from django.urls import include, path
 from .views import CustomerCreate, CustomerList, CustomerDetail, CustomerUpdate, CustomerDelete
 
+app_name = 'customer'
 
 urlpatterns = [
     path('create/', CustomerCreate.as_view(), name='create-customer'),
